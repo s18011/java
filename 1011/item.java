@@ -1,11 +1,11 @@
-public class Item {
+public class item {
     private final String code;
     private final String name;
     private final String maker;
     private final int price;
 
     //コンストラクタ
-    public Item(String code, String name, String maker, int price) {
+    public item(String code, String name, String maker, int price) {
     super();
     //引数でもらった値をインスタンス変数に代入
     this.code = code;
@@ -46,7 +46,7 @@ public class Item {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Item other = (Item) obj;
+        item other = (item) obj;
         if (code == null) {
             if (other.code != null)
                 return false;
